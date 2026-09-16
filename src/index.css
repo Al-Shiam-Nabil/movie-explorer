@@ -1,6 +1,16 @@
 @import "tailwindcss";
+@plugin "daisyui";
 @import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
   font-family: "Mona Sans", sans-serif;
+  
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #F5C518;
+  --color-secondary: #8B5CF6;
+
 }
