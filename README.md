@@ -2,7 +2,7 @@
 
 A responsive movie browsing app built with React and the TVMaze API.
 
-**Live site:** _add your deployment link here_
+**Live site:** https://movie-explorer-liard-two.vercel.app/
 
 ## Tech Stack
 
