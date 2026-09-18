@@ -14,7 +14,7 @@ export default function useGetMovies() {
         setError("");
 
         const url = searchName.trim()
-          ? `https://api.tvmaze.com/search/shows?q=${searchName}`
+          ? `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(searchName)}`
           : `https://api.tvmaze.com/shows`;
 
         const result = await fetch(url);

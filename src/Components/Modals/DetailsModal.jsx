@@ -16,7 +16,7 @@ export default function DetailsModal({ onClose, selectedMovie }) {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="md:w-3xl lg:w-4xl xl:w-6xl  bg-white rounded-xl p-5  "
+          className="w-[90vw] md:w-3xl lg:w-4xl xl:w-6xl  bg-white rounded-xl p-5  "
         >
           <div className="flex   justify-end mb-3  ">
             <X

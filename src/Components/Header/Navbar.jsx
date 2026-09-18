@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Container from "../Shared/Container";
 import MainButton from "../Shared/MainButton";
 
@@ -8,7 +9,7 @@ export default function Navbar() {
         <div className="navbar px-0">
           <div className="navbar-start ">
             <div className="dropdown">
-              <div tabIndex={0} role="button" className="  lg:hidden">
+              <div tabIndex={0} role="button" className="  lg:hidden mr-3">
                 <svg
                   aria-label="Menu"
                   xmlns="http://www.w3.org/2000/svg"
@@ -31,51 +32,41 @@ export default function Navbar() {
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 <li>
-                  <a>Item 1</a>
+                  <Link to="/">Home</Link>
+                </li>
+
+                <li>
+                  <a href="#">About Us</a>
                 </li>
                 <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a>Item 3</a>
+                  <a href="#">Support </a>
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">Movie Explorer</a>
+            <Link to="/" className=" text-2xl font-bold">
+              Movie Explorer
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a>Item 1</a>
+                <a>Home</a>
               </li>
+
               <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2 bg-base-100 w-40 z-1">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
-                </details>
+                <a>About Us</a>
               </li>
+
               <li>
-                <a>Item 3</a>
+                <a>Support</a>
               </li>
             </ul>
           </div>
           <div className="navbar-end">
-            <MainButton>Browse Movie</MainButton>
+            <Link to="/movies">
+              {" "}
+              <MainButton>Browse Movie</MainButton>
+            </Link>
           </div>
         </div>
       </Container>

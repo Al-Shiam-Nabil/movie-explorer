@@ -33,7 +33,7 @@ export default function AllMoviesPage() {
     }
 
     return (
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-7 gap-y-10 mt-15 mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-7 gap-y-10 mt-15 mb-20">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}

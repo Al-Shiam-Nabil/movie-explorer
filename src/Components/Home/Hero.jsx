@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Heroimage from "../../assets/movie-explorer-hero.jpg";
 import Container from "../Shared/Container";
 import MainButton from "../Shared/MainButton";
@@ -14,7 +15,9 @@ export default function Hero() {
           {" "}
           Explore and discover your favorite. movies from around the world.{" "}
         </h3>
-        <MainButton className="w-40">Explore Now</MainButton>
+        <Link to="/movies">
+          <MainButton className="w-40">Explore Now</MainButton>
+        </Link>
       </div>
     </Container>
   );
